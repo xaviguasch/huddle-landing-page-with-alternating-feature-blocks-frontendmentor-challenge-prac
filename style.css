@@ -46,6 +46,7 @@
   --fs-80: 5rem;
 
   --clr-pink: hsl(322, 100%, 66%);
+  --clr-pink-hover: hsl(322, 87%, 76%);
 
   --clr-very-pale-cyan: hsl(193, 100%, 96%);
   --clr-very-dark-cyan: hsl(192, 100%, 9%);
@@ -112,6 +113,86 @@ img {
 .small-text {
   font-size: var(--fs-12);
   color: var(--clr-white);
+}
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+.btn {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  border-radius: 2em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn--header {
+  padding: 0.6em 1.5em;
+  background-color: var(--clr-white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.btn--header:hover,
+.btn--header:focus {
+  color: var(--clr-grayish-blue);
+}
+
+.btn--hero {
+  color: var(--clr-white);
+  background-color: var(--clr-pink);
+  width: 240px;
+  padding: 1em 1.5em;
+}
+
+.btn--hero:hover,
+.btn--hero:focus {
+  background-color: var(--clr-pink-hover);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+.container {
+  padding: 0em 1em;
+}
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
+.header-and-hero {
+  background: url('./images/bg-hero-mobile.svg');
+  background-color: var(--clr-very-pale-cyan);
+}
+
+.header {
+  padding-top: 1.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 104px;
+}
+
+.hero {
+  margin-top: 5em;
+  padding: 0 2.175em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+}
+
+.hero .copy-text {
+  margin-top: 1.5em;
+}
+
+.btn--hero {
+  margin-top: 2em;
 }
 
 /* ================== */
