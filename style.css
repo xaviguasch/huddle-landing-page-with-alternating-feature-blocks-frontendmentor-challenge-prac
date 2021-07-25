@@ -180,7 +180,7 @@ img {
 
 .hero {
   margin-top: 5em;
-  padding: 0 2.175em;
+  padding: 0 2.175em 2.25em;
 
   display: flex;
   flex-direction: column;
@@ -193,6 +193,44 @@ img {
 
 .btn--hero {
   margin-top: 2em;
+}
+
+/* Main */
+.main {
+  padding-top: 3.7em;
+}
+
+.features {
+  padding: 0em 1.25em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 4px 6px -5px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 0.5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+
+  padding: 1.5em 2.5em 2em;
+}
+
+.feat-a .section__illustration-area,
+.feat-b .section__illustration-area,
+.feat-c .section__illustration-area {
+  order: -1;
+}
+
+.feat-copy-text {
+  margin-top: 1em;
 }
 
 /* ================== */
