@@ -352,7 +352,7 @@ img {
   }
 }
 
-/* Desktop */
+/* Tablet 2 */
 @media (min-width: 860px) {
   /* Typography */
   .title {
@@ -372,9 +372,13 @@ img {
     font-size: var(--fs-14);
   }
 
+  /* Utility styles */
+
   .container {
     padding: 3em 5em 0;
   }
+
+  /* Sections */
 
   .header .logo {
     width: 200px;
@@ -428,9 +432,13 @@ img {
     margin: 7.5em auto -4em;
   }
 
+  .footer {
+    padding: 8em 5em 1em;
+  }
+
   .footer__grid {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5em;
   }
 
@@ -448,5 +456,86 @@ img {
 
   .socials ul {
     justify-content: flex-start;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1140px) {
+  /* Typography */
+  .title {
+    font-size: var(--fs-40);
+  }
+
+  .small-title {
+    font-size: var(--fs-28);
+  }
+
+  .feat-copy-text {
+    font-size: var(--fs-18);
+  }
+
+  .medium-title {
+    font-size: var(--fs-32);
+  }
+
+  /* Sections */
+  .header,
+  .hero,
+  .main,
+  .footer__grid {
+    max-width: 1650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__copy-area {
+    width: 45%;
+  }
+  .hero__image-area {
+    width: 55%;
+  }
+
+  .card {
+    padding: 2.5em 2.5em 3em;
+    gap: 5em;
+  }
+
+  .illustration-img {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .features .illustration-img {
+    max-width: 440px;
+  }
+
+  .section__copy-area {
+    max-width: 485px;
+  }
+
+  .cta-section {
+    max-width: 800px;
+    padding: 3.5em 0;
+    margin: 7.5em auto -5em;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .socials-and-copyright {
+    margin-top: 3em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
