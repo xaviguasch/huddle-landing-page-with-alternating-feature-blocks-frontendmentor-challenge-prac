@@ -101,6 +101,8 @@ img {
 .contact__text {
   font-size: var(--fs-14);
   color: var(--clr-white);
+  font-family: var(--ff-secondary);
+  line-height: 1.7;
 }
 
 .footer__link {
@@ -233,15 +235,90 @@ img {
   margin-top: 1em;
 }
 
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
+.cta-section {
+  padding: 2.5em 0.7em;
+  margin: 7.5em 0.7em -4em;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 4px 6px -5px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.footer {
+  background: var(--clr-very-dark-cyan);
+  padding: 8em 1em 1em;
+}
+
+.footer .logo-img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%)
+    contrast(102%);
+  width: 150px;
+  margin-bottom: 2em;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact__medium {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+
+  margin-top: 1.5em;
+}
+
+.contact-icon-img--location {
+  width: 50px;
+  margin-top: -1.25em;
+}
+
+.links {
+  margin-top: 2.5em;
+}
+
+.links__a,
+.links__b {
+  text-align: left;
+}
+
+.footer__link {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  text-decoration: underline;
+}
+
+.socials-and-copyright {
+  margin-top: 1.5em;
+}
+
+.socials ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9em;
+}
+
+.fab {
+  font-size: var(--fs-20);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-white);
+  padding: 0.5em 0.5em;
+  border-radius: 50%;
+}
+
+.copyright {
+  margin-top: 1.5em;
+}
+
+.signature {
+  margin-top: 3em;
+  color: var(--clr-white);
+}
 
 .attribution {
   font-size: 11px;
@@ -250,3 +327,13 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
